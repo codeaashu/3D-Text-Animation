@@ -1,0 +1,32 @@
+body{
+  background-color: rgb(27, 26, 26);
+}
+.container{
+  perspective: 800px;
+  perspective-origin: 50% 50%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  font-size: 6rem;
+  color: #c7045f;
+  transform-style: preserve-3d;
+  animation: rotateText 5s infinite linear;
+}
+@keyframes rotateText {
+  0%{
+    transform: rotatex(0deg) rotatey(0deg) translatez(-100px);
+
+  }
+  50%{
+    transform: rotatex(180deg) rotatey(180deg) translatez(-100px);
+    
+  }
+  100%{
+    transform: rotatex(360deg) rotatey(360deg) translatez(-100px);
+    
+  }
+}
